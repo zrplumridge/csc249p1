@@ -1,5 +1,11 @@
 # CSC 249 – Project 1 – Simple RPC Client-Server App
 
+# Zoe Plumridge
+Input: int any number of words
+Puts all words into uppercase
+Repeats int times (defaults to 5 times if no int provided)
+
+
 Building distributed network applications in Python is fun!
 
 For your first experience building a simple network application in Python, you will start with Python code taken from an online tutorial: _Socket Programming in Python (Guide)_ by Nathan Jennings, available online at https://realpython.com/python-sockets/. 
