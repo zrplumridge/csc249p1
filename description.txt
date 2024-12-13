@@ -1,11 +1,17 @@
-A document with a written description of your client-server message format (that is, a description of all implemented client and server messages, and how the various components of each message are represented). This document must also briefly summarize what your client-server application does, and provide examples of expected output for all implemented RPC operations. Your goal in writing this document should be to convey enough information in enough detail to allow a competent programmer without access to your source code to write either a new client that communicates properly with your server, or a new server that communicates properly with your client. This document should include at least five sections: 
-Overview of Application, 
+Zoe Plumridge 
+Originally Due Sept 20 2024
+Resubmitting Dec 13 2024
+
+instructions discussed with Emi Neuwalder, ideas discussed with Vivian Streber
+
 Input: "int" "any number of words"
-Puts all words into uppercase
+Puts all words into uppercase then
 Repeats int times (defaults to 5 times if no int provided or if int > 20)
+5 hello -> HELLO HELLO HELLO HELLO HELLO
 
-Client->Server Message Format, 
-Server->Client Message Format, 
-Example Output, 
-
-Acknowledgments. N/A. 
+Encoding is in bytes with utf-8. 
+Input on client end must be a string. If input is "quit" then program will be cancelled. 
+Server must return a string. 
+Server info: HOST = "127.0.0.1"  # This is the loopback address
+PORT = 65432        # The port used by the server
+At most 1024 bytes will be read on either side.  
